@@ -21,7 +21,7 @@ class App extends Component {
 
    addItem = (name) => {
     const { groceries } = this.state;
-    const grocery = { id: this.getUniqId, name,  complete: false }
+    const grocery = { id: this.getUniqId(), name,  complete: false }
     this.setState({ groceries: [grocery, ...groceries] }); 
     }
 
